@@ -70,4 +70,16 @@ public class Player {
 			dy = 0;
 		}
 	}
+
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public Image getImagem() {
+		return imagem;
+	}
 }
