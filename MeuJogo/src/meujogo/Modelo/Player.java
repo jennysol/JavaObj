@@ -35,8 +35,39 @@ public class Player {
 		int codigo = tecla.getKeyCode();
 		
 		if(codigo == KeyEvent.VK_UP) {
+			dy = -3;
+		}
+		
+		if(codigo == KeyEvent.VK_DOWN) {
 			dy = 3;
-			
+		}
+		
+		if(codigo == KeyEvent.VK_LEFT) {
+			dx = -3;
+		}
+		
+		if(codigo == KeyEvent.VK_RIGHT) {
+			dy = 3;
+		}
+	}
+	
+//	Quando parar de pressionar a tela 
+	public void keyRelease(KeyEvent tecla) {
+		int codigo = tecla.getKeyCode();
+		if(codigo == KeyEvent.VK_UP) {
+			dy = 0;
+		}
+		
+		if(codigo == KeyEvent.VK_DOWN) {
+			dy = 0;
+		}
+		
+		if(codigo == KeyEvent.VK_LEFT) {
+			dx = 0;
+		}
+		
+		if(codigo == KeyEvent.VK_RIGHT) {
+			dy = 0;
 		}
 	}
 }
