@@ -12,18 +12,22 @@ public class Game extends Canvas implements Runnable {
 	
 	public static final int WIDTH = 640, HEIGHT = 480;
 	
-	public int contador = 100;
+	public static int contador = 100;
+	
+	public Spawner spawner;
 	
 	//Método Construtor
 	public Game() {
 		Dimension dimension = new Dimension(WIDTH,HEIGHT);
 		this.setPreferredSize(dimension);
+		
+		spawner = new Spawner();
 	}
 	
 	// Método de Atualização
 	public void update() {
-		contador --;
-		
+		spawner.update();
+		//Game Over
 		if(contador <= 0) {
 			contador = 100;
 		}
@@ -51,6 +55,8 @@ public class Game extends Canvas implements Runnable {
 		g.fillRect(Game.WIDTH/2 - 100 - 70, 20, contador * 3, 20);
 		g.setColor(Color.white);
 		g.drawRect(Game.WIDTH/2 - 100 - 70, 20, 300, 20);
+		
+		spawner.render(g);
 		bs.show();
 	}
 	
