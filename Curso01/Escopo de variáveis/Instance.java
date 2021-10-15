@@ -3,7 +3,7 @@
 // }
 
 
-public class Teste {
+public class Instance {
 
   String nome = "Jennifer";
   String nomeCompleto = nome + " Soliver";
@@ -12,13 +12,13 @@ public class Teste {
     System.out.println("Método acessando a instancia " + nomeCompleto);
   }
 
-  public Teste() {
+  public Instance() {
     System.out.println("Construtor acessando a instancia " + nome);
   }
 
 
   public static void main(String[] args) {
-      Teste t = new Teste();
+      Instance t = new Instance();
       t.m2();
       t.nome = "Matheus";
       System.out.println(t.nome);
