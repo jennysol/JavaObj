@@ -2,23 +2,23 @@
 //   Observando escopo de váriáveis locais.
 // }
 
-public class Escopo {
+public class Scope {
 
-    // Testando escopo 
+    // Testando Scope 
 
 
     public void m2() {
     }
 
-    public Escopo(String nome) {
-        System.out.println(nome);
+    public Scope(String name) {
+        System.out.println(name);
         m2();
-        System.out.println(nome);
+        System.out.println(name);
     }
 
 
     public static void main(String[] args) {
-        Escopo t = new Escopo("jennifer");
+        Scope t = new Scope("jennifer");
     }
 
     // Testando escopo com um Construtor
