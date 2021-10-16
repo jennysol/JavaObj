@@ -1,7 +1,7 @@
-// Introdução {
-//   Uma variável de instancia é uma variável cujo valor é específico ao objeto e não à classe.  
-// }
-
+/* 
+    Introdução:
+     Uma variável de instancia é uma variável cujo valor é específico ao objeto e não à classe.   
+*/
 
 public class Instance {
 

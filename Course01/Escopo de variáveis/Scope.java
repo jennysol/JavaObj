@@ -1,6 +1,7 @@
-// Introdução {
-//   Observando escopo de váriáveis locais.
-// }
+/* 
+    Introdução:
+        Observando escopo de váriáveis locais.
+*/
 
 public class Scope {
 
